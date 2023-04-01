@@ -1,0 +1,21 @@
+  Typescript
+
+- TypeScript is a programming language developed by Microsoft.
+ -   It is a strict syntactical superset of JavaScript, meaning that any valid JavaScript code is also valid TypeScript code.
+  -  TypeScript adds optional static typing, which helps catch errors at compile-time instead of runtime.
+   - It supports object-oriented programming concepts such as classes, interfaces, and inheritance.
+  -  TypeScript is compatible with existing JavaScript code, allowing for gradual migration to TypeScript.
+  -  It can be compiled to JavaScript for use in any environment that supports JavaScript.
+  -  TypeScript offers improved tooling and developer experience, including code navigation, auto-completion, and refactoring tools.
+  -  It is great for large-scale JavaScript development, making code easier to maintain and work with.
+
+
+  Installation 
+
+   -  npm i -g typescript
+
+  Check version of typescript
+
+   - tsc -v
+
+
