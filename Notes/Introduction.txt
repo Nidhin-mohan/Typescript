@@ -19,3 +19,23 @@
    - tsc -v
 
 
+   Variables in Typescript
+
+   let myName: string = 'John'; // declare a variable with a string value
+const age: number = 30; // declare a constant with a number value
+
+function sayHello(name: string): void {
+  console.log(`Hello, ${name}!`);
+}
+
+sayHello(myName); // prints "Hello, John!"
+
+myName = 'Jane'; // change the value of myName variable
+sayHello(myName); // prints "Hello, Jane!"
+
+// age = 31; // Error: cannot assign to 'age' because it is a constant
+
+
+Functions
+
+
