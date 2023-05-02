@@ -1,39 +1,55 @@
-//Arrays
+//explicir types
+ let char : string;
+ let age : number;
+ let isloged : boolean;
 
-let names = ['nik', 'mario']
+ age = 8;
+//  age = "hf"
+//  Type 'string' is not assignable to type 'number'.
 
-names.push("toad");
-// names.push(2)
+// isloged = 9;
+// Type 'number' is not assignable to type 'boolean'.
 
-let numbers = [10, 20, 30, 40];
+//arrays
+let ninjas : string[] 
 
-numbers.push(25);
-// numbers.push('i')
+ninjas = ['yoshi', "manju"]
 
-let mix = [1, 'hi', '4'];
+ninjas.push('shaun');
 
-mix.push('you');
-mix.push(10)
-mix[0] = 3;
+console.log(ninjas)
+
+//union types
+
+let mixed: (string | number | boolean)[]  =[];
+
+mixed.push("hi")
+mixed.push(20);
+mixed.push(false);
+
+console.log(mixed);
 
 
-//objects
+let uid: string| number;
 
-let ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
-};
+uid = 12;
+uid = "12";
 
-ninja.age = 40;
-ninja.name = 'naven';
-// ninja.age = 'hi'
 
-// ninja.skills = 'check'
-
-ninja = {
-    name: "hiu",
-    belt: "ihh",
-    age: 9,
-    // skills: "dfd"
+let ninjaOne : object;
+ninjaOne = {
+    name: "nid",
+    age: 20,
 }
+ let ninjaTwo :{
+    name: string,
+    age: number,
+    belt :string ;
+ } 
+
+ ninjaTwo = {
+    name: "string",
+    age: 9,
+    belt :"string" ;
+ }
+

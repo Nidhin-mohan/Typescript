@@ -1,27 +1,34 @@
-//Arrays
-var names = ['nik', 'mario'];
-names.push("toad");
-// names.push(2)
-var numbers = [10, 20, 30, 40];
-numbers.push(25);
-// numbers.push('i')
-var mix = [1, 'hi', '4'];
-mix.push('you');
-mix.push(10);
-mix[0] = 3;
-//objects
-var ninja = {
-    name: 'mario',
-    belt: 'black',
-    age: 30
+//explicir types
+var char;
+var age;
+var isloged;
+age = 8;
+//  age = "hf"
+//  Type 'string' is not assignable to type 'number'.
+// isloged = 9;
+// Type 'number' is not assignable to type 'boolean'.
+//arrays
+var ninjas;
+ninjas = ['yoshi', "manju"];
+ninjas.push('shaun');
+console.log(ninjas);
+//union types
+var mixed = [];
+mixed.push("hi");
+mixed.push(20);
+mixed.push(false);
+console.log(mixed);
+var uid;
+uid = 12;
+uid = "12";
+var ninjaOne;
+ninjaOne = {
+    name: "nid",
+    age: 20,
 };
-ninja.age = 40;
-ninja.name = 'naven';
-// ninja.age = 'hi'
-// ninja.skills = 'check'
-ninja = {
-    name: "hiu",
-    belt: "ihh",
+var ninjaTwo;
+ninjaTwo = {
+    name: "string",
     age: 9,
-    // skills: "dfd"
+    belt: "string"
 };
