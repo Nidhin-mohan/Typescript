@@ -32,3 +32,8 @@ ninjaTwo = {
     age: 9,
     belt: "string"
 };
+var message = "Hello World!";
+// Calling 'message'
+// message();
+//  message.toLowerCase()
+console.log(message.toLowerCase());

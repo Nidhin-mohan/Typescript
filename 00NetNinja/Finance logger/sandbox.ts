@@ -53,3 +53,13 @@ ninjaOne = {
     belt :"string" ;
  }
 
+
+
+ const message = "Hello World!";
+ // Calling 'message'
+// message();
+
+
+//  message.toLowerCase()
+
+ console.log(message.toLowerCase())
