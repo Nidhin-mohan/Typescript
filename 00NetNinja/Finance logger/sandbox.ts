@@ -1,65 +1,29 @@
-//explicir types
- let char : string;
- let age : number;
- let isloged : boolean;
+let age : any ;
 
- age = 8;
-//  age = "hf"
-//  Type 'string' is not assignable to type 'number'.
+age = 25;
+age = "nidh";
+age = true;
+console.log(age)
+age = {
+   name : "hi"
+};
 
-// isloged = 9;
-// Type 'number' is not assignable to type 'boolean'.
+let mixed : any[] = []; 
 
-//arrays
-let ninjas : string[] 
+mixed.push(4);
+mixed.push("name");
 
-ninjas = ['yoshi', "manju"]
+let ninja : {
+   name: any,
+   age : any
+};
 
-ninjas.push('shaun');
-
-console.log(ninjas)
-
-//union types
-
-let mixed: (string | number | boolean)[]  =[];
-
-mixed.push("hi")
-mixed.push(20);
-mixed.push(false);
-
-console.log(mixed);
-
-
-let uid: string| number;
-
-uid = 12;
-uid = "12";
-
-
-let ninjaOne : object;
-ninjaOne = {
-    name: "nid",
-    age: 20,
+ninja = {
+   name: 'yoshi',
+   age: 25,
 }
- let ninjaTwo :{
-    name: string,
-    age: number,
-    belt :string ;
- } 
 
- ninjaTwo = {
-    name: "string",
-    age: 9,
-    belt :"string" ;
- }
-
-
-
- const message = "Hello World!";
- // Calling 'message'
-// message();
-
-
-//  message.toLowerCase()
-
- console.log(message.toLowerCase())
+ninja = {
+   name: 232,
+   age: "sjj",
+}
