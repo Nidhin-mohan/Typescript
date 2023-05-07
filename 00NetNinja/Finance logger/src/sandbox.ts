@@ -1,22 +1,13 @@
-let greet : Function
-
- greet = () => {
-    console.log("first")
-};
-
-// greet = "hello"
-
-const add = (a: number, b: number, c : number  = 10) : void => {
-  console.log(a+b+c)
+type StringOrNum = string | number;
+type objWithName = {
+    name: string,
+    uid: String
 }
 
-add(3,7,89);
-
-
-const minus = (a:number, b:number) : number => {
-    return a+b;
+const logDetails = (uid: string | number , item: string) => {
+    console.log(`${item} has uid of ${uid}`);
 }
 
-let result = minus(10,7)
-// result = "some"
-
+const greet = (user: objWithName) => {
+    console.log(`${name} says hello`)
+}
