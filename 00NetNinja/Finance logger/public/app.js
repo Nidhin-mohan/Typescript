@@ -1,4 +1,23 @@
 "use strict";
+//classes }
+class Invoice {
+    constructor(c, d, a) {
+        this.client = c;
+        this.details = d;
+        this.amount = a;
+    }
+    format() {
+        return `${this.client}  owes #{this.amount} for ${this.details}`;
+    }
+}
+const invOne = new Invoice('mario', 'work on website', 25);
+const invTwo = new Invoice('Nidhin', 'work on website', 25);
+console.log(invOne, invTwo);
+let invoice = [];
+invoice.push(invOne);
+invoice.push(invTwo);
+console.log("first");
+console.log(invoice);
 const anchor = document.querySelector('a');
 if (anchor) {
     console.log(anchor.href);
