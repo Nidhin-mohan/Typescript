@@ -1,6 +1,26 @@
-// import { Invoice}  from './classes/invoice'
+import { Invoice } from "./classes/Invoice.js";
 
-import { Invoice } from "./classes/Invoice";
+interface  IsPerson {
+    name: string;
+    speak(a:string): void
+    age: number;
+    spend(a: number): number;
+}
+
+console.log("first")
+const me:IsPerson = {
+    name : "nid",
+    age : 30 ,
+    speak(text:string) : void {
+        console.log(text);
+    },
+    spend(amount:number): number {
+            console.log("I spend", amount)
+            return amount;
+    }
+}
+  console.log(me)
+
 
 
   const invOne = new Invoice('mario', 'work on the mario website', 250);
