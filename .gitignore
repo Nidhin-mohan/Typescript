@@ -1,0 +1,8 @@
+
+# //ignore node_modules
+/03Ts/node_modules
+
+# ignore dist
+
+/03Ts/dist
+
