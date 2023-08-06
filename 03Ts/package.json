@@ -4,12 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "lite-server"
+    "start": "concurrently \"npm run dev:build\" \"npm run dev:server\"",
+    "dev:build": "tsc --watch",
+    "dev:server": "nodemon dist/index.js",
+    "build": "tsc",
+    "server": "node dist/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lite-server": "^2.6.1"
+    "concurrently": "^8.2.0",
+    "lite-server": "^2.6.1",
+    "nodemon": "^3.0.1"
   }
 }
