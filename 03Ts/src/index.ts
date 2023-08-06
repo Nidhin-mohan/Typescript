@@ -13,7 +13,7 @@
 // }
 
 class User {
-    private _courseCount =  1
+    protected _courseCount =  1
   constructor(
    public email: string, 
    public  name: string
@@ -40,7 +40,17 @@ class User {
   }
 }
 
+class SubUser extends User {
+    isFamily : boolean = true
+    changeCourseCount(){
+        this._courseCount
+    }
+}
+
 const nidhin = new User("hi@f.com",  "uhfvu");
 // nidhin.city 
 console.log(nidhin);
+
+// const 
+// console.log(first)
 
