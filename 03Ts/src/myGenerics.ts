@@ -52,7 +52,7 @@ function anotherFunction<T, U extends Database>(val1: T, val2: U):object{
  }
 } 
 
-anotherFunction(3 , {});
+// anotherFunction(3 , {});
 
 interface Quiz{
     name: string,
